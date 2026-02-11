@@ -270,7 +270,7 @@
             
             if (matchingStores.length > 0) {
                 var storeList = matchingStores.map((store, index) => `<li>${index + 1}. ${store.name}</li>`).join("");
-                document.getElementById("answer-location").innerHTML = `<div class="available-title">Available at:</div><ol class="location-list">${storeList}</ol>`;
+                document.getElementById("answer-location").innerHTML = `<div class="available-title">Stores that fit your budget:</div><ol class="location-list">${storeList}</ol>`;
             } else {
                 document.getElementById("answer-location").innerHTML = "Sorry! No Matches Found. ";
             }
@@ -279,4 +279,5 @@
     
         document.getElementById('instructions').innerHTML = "Please enter your budget and our BEST Locatinator 10000 will find the best products for your range!";</script>
 </body>
+
 </html>
